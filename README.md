@@ -1,6 +1,6 @@
-# N-Body Simulation – Sequential & Parallel (OpenMP)
+# Nbody - Sequential vs Parallel
 
-This project implements a gravitational n-body simulation and provides both **sequential** and **parallel (OpenMP)** versions. The parallel version supports multi-threaded execution using OpenMP to simulate particle interactions faster for large datasets.
+This project parallelizes a previously sequential n-body gravitational simulation. The parallel version utilizes OpenMP to allow you to run the simulation with a specified number of threads.
 
 ---
 
@@ -10,7 +10,7 @@ Make sure the following files are present in your project directory:
 
 - `nbody.cpp` – Sequential version
 - `nbodyParallel.cpp` – Parallel version
-- `Makefile` – compiles both files
+- `Makefile` – Compiles both files
 
 To compile the project, simply run:
 

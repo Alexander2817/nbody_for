@@ -12,7 +12,7 @@ Make sure the following files are present in your project directory:
 - `nbodyParallel.cpp` – Parallel version
 - `Makefile` – Compiles both files
 
-To compile the project, simply run:
+To compile the project, run:
 
 ```bash
 make

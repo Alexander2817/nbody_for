@@ -27,3 +27,7 @@ make
 ```bash
 OMP_NUM_THREADS=8 ./nbodyParallel 1000 1 10000 100
 ```
+
+## Comparison
+
+See the results from both to gauge the performance of the parallel version compared to the sequential version of 1000 particles. Change the specifications to test out different particles and number of threads used.

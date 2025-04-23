@@ -1,13 +1,18 @@
-# nbody_for
+# N-Body Simulation – Sequential & Parallel (OpenMP)
 
-This project parallizes our current sequential nbody, in which you will be able to run with different set amount of threads.
+This project implements a gravitational n-body simulation and provides both **sequential** and **parallel (OpenMP)** versions. The parallel version supports multi-threaded execution using OpenMP to simulate particle interactions faster for large datasets.
 
-To compile, you will need to have the nbody.cpp, nbodyParallel.cpp, and Makefile. 
+---
 
-From there you will be able to type make into your command line interface
+##  Compilation Instructions
 
-Next you can run the sequential version first, then run the parallel version with any # of threads(strictly go into 128). 
--Run this test with ./nbody 1000 1 10000 100 for 1000 particles here in sequential.
--Run OMP_NUM_THREADS=8 ./nbodyParallel 1000 1 10000 100 for 1000 particles in parallel.
+Make sure the following files are present in your project directory:
 
-Compare the two and see how the program results in quicker times.
+- `nbody.cpp` – Sequential version
+- `nbodyParallel.cpp` – Parallel version
+- `Makefile` – compiles both files
+
+To compile the project, simply run:
+
+```bash
+make

@@ -4,7 +4,7 @@ This project parallelizes a previously sequential n-body gravitational simulatio
 
 ---
 
-##  Compilation Instructions
+##  Compilation
 
 Make sure the following files are present in your project directory:
 
@@ -16,5 +16,14 @@ To compile the project, simply run:
 
 ```bash
 make
+```
 
-gtom yrhtr 
+## Running sequential
+```bash
+./nbody 1000 1 10000 100
+```
+
+## Running parallel
+```bash
+OMP_NUM_THREADS=8 ./nbodyParallel 1000 1 10000 100
+```
